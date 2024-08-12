@@ -1,0 +1,93 @@
+=====  =====
+===========
+
+=====  =====
+===========
+
+=====  General =====
+Scraped 1/10 FAQs
+Scraped 2/10 FAQs
+Scraped 3/10 FAQs
+Scraped 4/10 FAQs
+Scraped 5/10 FAQs
+Scraped 6/10 FAQs
+Scraped 7/10 FAQs
+Scraped 8/10 FAQs
+Scraped 9/10 FAQs
+Scraped 10/10 FAQs
+====================
+
+=====  Getting started =====
+Scraped 1/4 FAQs
+Scraped 2/4 FAQs
+Scraped 3/4 FAQs
+Scraped 4/4 FAQs
+============================
+
+=====  Databases and storage =====
+Scraped 1/5 FAQs
+Scraped 2/5 FAQs
+Scraped 3/5 FAQs
+Scraped 4/5 FAQs
+Scraped 5/5 FAQs
+==================================
+
+=====  Security =====
+Scraped 1/13 FAQs
+Scraped 2/13 FAQs
+Scraped 3/13 FAQs
+Scraped 4/13 FAQs
+Scraped 5/13 FAQs
+Scraped 6/13 FAQs
+Scraped 7/13 FAQs
+Scraped 8/13 FAQs
+Scraped 9/13 FAQs
+Scraped 10/13 FAQs
+Scraped 11/13 FAQs
+Scraped 12/13 FAQs
+Scraped 13/13 FAQs
+=====================
+
+=====  Managed platform updates =====
+Scraped 1/15 FAQs
+Scraped 2/15 FAQs
+Scraped 3/15 FAQs
+Scraped 4/15 FAQs
+Scraped 5/15 FAQs
+Scraped 6/15 FAQs
+Scraped 7/15 FAQs
+Scraped 8/15 FAQs
+Scraped 9/15 FAQs
+Scraped 10/15 FAQs
+Scraped 11/15 FAQs
+Scraped 12/15 FAQs
+Scraped 13/15 FAQs
+Scraped 14/15 FAQs
+Scraped 15/15 FAQs
+=====================================
+
+=====  AWS Graviton support =====
+Scraped 1/5 FAQs
+Scraped 2/5 FAQs
+Scraped 3/5 FAQs
+Scraped 4/5 FAQs
+Scraped 5/5 FAQs
+=================================
+
+=====  Billing =====
+Scraped 1/3 FAQs
+Scraped 2/3 FAQs
+Scraped 3/3 FAQs
+====================
+
+=====  Support =====
+Scraped 1/2 FAQs
+Scraped 2/2 FAQs
+====================
+
+=====  =====
+===========
+
+=====  =====
+===========
+

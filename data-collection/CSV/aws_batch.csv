@@ -1,0 +1,96 @@
+question,answer,category,sub_category
+What is AWS Batch?,"
+AWS Batch is a set of batch management capabilities that enables developers, scientists, and engineers to easily and efficiently run hundreds of thousands of batch computing jobs on AWS. AWS Batch dynamically provisions the optimal quantity and type of compute resources (e.g., CPU or memory optimized compute resources) based on the volume and specific resource requirements of the batch jobs submitted. With AWS Batch, there is no need to install and manage batch computing software or server clusters, allowing you to instead focus on analyzing results and solving problems. AWS Batch plans, schedules, and executes your batch computing workloads using [Amazon ECS](http://web.archive.org/web/20240727090605/https://aws.amazon.com/ecs/), [Amazon EKS](http://web.archive.org/web/20240727090605/https://aws.amazon.com/eks/), and [AWS Fargate](http://web.archive.org/web/20240727090605/https://aws.amazon.com/fargate/) with an option to utilize spot instances.
+",Batch,General information
+What is Batch Computing?,"
+Batch computing is the execution of a series of programs (""jobs"") on one or more computers without manual intervention. Input parameters are pre-defined through scripts, command-line arguments, control files, or job control language. A given batch job may depend on the completion of preceding jobs, or on the availability of certain inputs, making the sequencing and scheduling of multiple jobs important, and incompatible with interactive processing.
+",Batch,General information
+What are the benefits of batch computing?,"
+
+It can shift the time of job processing to periods when greater or less expensive capacity is available.
+It avoids idling compute resources with frequent manual intervention and supervision.
+It increases efficiency by driving higher utilization of compute resources.
+It enables the prioritization of jobs, aligning resource allocation with business objectives.
+
+",Batch,General information
+When should I run my jobs in EKS vs. Fargate vs. ECS?,"
+You should run your jobs on Fargate when you want AWS Batch to handle provisioning of compute completely abstracted from ECS infrastructure. You should run your jobs on ECS if you need access to particular instance configurations (particular processors, GPUs, or architecture) or for very-large scale workloads. If you have chosen Kubernetes as your container orchestration technology, you can standardize your batch workloads using Batch integration with EKS.
+Depending on your use case, currently Fargate jobs will start faster in the case of initial scale-out of work, as there is no need to wait for EC2 instance or pods to launch. However, for larger workloads EKS or ECS may be faster as Batch reuses instances and container images to run subsequent jobs.
+",Batch,General information
+When should I run my jobs in Fargate vs. EC2?,"
+You should run your jobs on Fargate when you want AWS Batch to handle provisioning of compute completely abstracted from EC2 infrastructure. You should run your jobs on EC2 if you need access to particular instance configurations (particular processors, GPUs, or architecture) or for very-large scale workloads.
+Depending on your use case, your jobs may start faster using either EC2 or Fargate. Fargate jobs will start faster in the case of initial scale-out of work, as there is no need to wait for EC2 instance to launch. However, for larger workloads EC2 instances may be faster as Batch reuses instances and container images to run subsequent jobs.
+",Batch,General information
+"Can I spill over from a Fargate CE to a Fargate Spot CE, or vice versa?","
+Yes. You can set Fargate CE’s to have a max vCPU, which is the total amount of vCPU of all the jobs currently running in that CE. When your vCPU count hits max vCPU in a CE, Batch will begin scheduling jobs on the next Fargate CE in order attached to the queue, if there is one. This is useful if, for example, you want to set a Fargate CE to some minimum business requirement, then run the rest of your workload on Fargate Spot.
+While setting a Fargate Spot CE as first, followed by a Fargate CE, Batch will only spill over into Fargate when the vCPU used by your jobs is greater than max vCPU for that CE. In the event that Fargate Spot is reclaimed, max vCPU will not be met and Batch will not request Fargate resources in the subsequent CE to run your jobs.
+Connecting an AWS Batch job queue to Fargate/Fargate Spot CE and an EC2 or Spot CE is not allowed.
+",Batch,General information
+Why should I use AWS Batch?,"
+AWS Batch handles job execution and compute resource management, allowing you to focus on developing applications or analyzing results instead of setting up and managing infrastructure. If you are considering running or moving batch workloads to AWS, you should consider using AWS Batch.
+",Batch,Why AWS Batch
+What use cases is AWS Batch optimized for?,"
+AWS Batch is optimized for batch computing and applications that scale through the execution of multiple jobs in parallel. Deep learning, genomics analysis, financial risk models, Monte Carlo simulations, animation rendering, media transcoding, image processing, and engineering simulations are all excellent examples of batch computing applications.
+",Batch,Why AWS Batch
+Why should I use multi-container jobs for AWS Batch?,"
+You should use the multi-container jobs feature if you want to model your AWS Batch workload as a set of logically distinct elements, for example, the simulation environment and system under test (SUT), main application, or telemetry sidecar. Using this feature will simplify your operations, make it easier to follow best architectural practices, and allow you to align simulations with the multi-container architecture of your production system-of-systems. Whether you are looking to run separate containers for your SUTs and simulation environment or need to add an auxiliary sidecar, you no longer need to combine all workload elements into a monolithic container and rebuild it after every code change. As a result, you can simplify DevOps, keep containers small and fast to download, and facilitate parallelization of work.
+",Batch,Multi-container jobs
+Which job types can you run with multi-container jobs?,"
+AWS Batch supports running multiple containers in all job types including single-node regular jobs, array jobs, and multi-node parallel (MNP) jobs.
+",Batch,Multi-container jobs
+Which compute environments can you use with multi-container jobs?,"
+You can run multi-container jobs in all AWS Batch compute environments including Amazon ECS, Amazon EC2, AWS Fargate, and Amazon EKS.
+",Batch,Multi-container jobs
+What are the key features of AWS Batch?,"
+AWS Batch manages compute environments and job queues, allowing you to easily run thousands of jobs of any scale using [Amazon ECS](http://web.archive.org/web/20240727090605/https://aws.amazon.com/ecs/), [Amazon EKS](http://web.archive.org/web/20240727090605/https://aws.amazon.com/eks/), and [AWS Fargate](http://web.archive.org/web/20240727090605/https://aws.amazon.com/fargate/) with an option between Spot or on-demand resources. You simply define and submit your batch jobs to a queue. In response, AWS Batch chooses where to run the jobs, launching additional AWS capacity if needed. AWS Batch carefully monitors the progress of your jobs. When capacity is no longer needed, AWS Batch will remove it. AWS Batch also provides the ability to submit jobs that are part of a pipeline or workflow, enabling you to express any interdependencies that exist between them as you submit jobs.
+",Batch,Features
+What types of batch jobs does AWS Batch support?,"
+AWS Batch supports any job that can executed as a Docker container. Jobs specify their memory requirements and number of vCPUs.  
+",Batch,Features
+What is a Compute Resource?,"
+An AWS Batch Compute Resource is an EC2 instance or AWS Fargate compute resource.
+",Batch,Features
+What is a Compute Environment?,"
+An AWS Batch Compute Environment is a collection of compute resources on which jobs are executed. AWS Batch supports two types of Compute Environments; Managed Compute Environments which are provisioned and managed by AWS and Unmanaged Compute Environments which are managed by customers. Unmanaged Compute Environments provide a mechanism to leverage specialized resources such as [Dedicated Hosts](http://web.archive.org/web/20240727090605/https://aws.amazon.com/ec2/dedicated-hosts/), larger storage configurations, and [Amazon EFS](http://web.archive.org/web/20240727090605/https://aws.amazon.com/efs/).
+",Batch,Features
+What is a Job Definition?,"
+A Job Definition describes the job to be executed, parameters, environmental variables, compute requirements, and other information that is used to optimize the execution of a job. Job Definitions are defined in advance of submitting a job and can be shared with others.
+",Batch,Features
+What is the Amazon ECS Agent and how is it used by AWS Batch?,"
+AWS Batch uses Amazon ECS to execute containerized jobs and therefore requires the ECS Agent to be installed on compute resources within your AWS Batch Compute Environments. The ECS Agent is pre-installed in Managed Compute Environments.
+",Batch,Features
+How does AWS Batch make it easier to use Spot Instances?,"
+AWS Batch Compute Environments can be comprised of EC2 Spot Instances. When creating a Managed Compute Environment, simplify specify that you would like to use EC2 Spot Instances and provide a percentage of On-Demand pricing that you are willing to pay and AWS Batch will take care of the rest. Unmanaged Compute Environments can also include Spot Instances that you launch, including those launched by [EC2 Spot Fleet](http://web.archive.org/web/20240727090605/https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-fleet.html).
+",Batch,Features
+What is the pricing for AWS Batch?,"
+There is no additional charge for AWS Batch. You only pay for the AWS Resources (e.g. EC2 instances or AWS Fargate) you create to store and run your batch jobs.
+",Batch,Pricing
+Can I use accelerators with AWS Batch?,"
+Yes, you can use Batch to specify the number and type of accelerators your jobs require as job definition input variables, alongside the current options of vCPU and memory. AWS Batch will scale up instances appropriate for your jobs based on the required accelerators and isolate the accelerators according to each job’s needs, so only the appropriate containers can access them.
+",Batch,GPU Scheduling
+Why should I use accelerators with AWS Batch?,"
+By using accelerators with Batch, you can dynamically schedule and provision your jobs according to their accelerator needs, and Batch will ensure that the appropriate number of accelerators are reserved against your jobs. Batch will scale up your EC2 Accelerated Instances when you need them, and scale them down when you’re done, allowing you to focus on your applications. Batch has native integration with the EC2 Spot, meaning your accelerated jobs can take advantage of up to 90% savings when using accelerated instances.
+",Batch,GPU Scheduling
+What accelerators can I use with AWS Batch?,"
+Currently you can use GPU’s on P and G accelerated instances.
+",Batch,GPU Scheduling
+How do I submit jobs requiring accelerated instances to Batch?,"
+You can specify the number and type of accelerators in the Job Definition. You specify the accelerator by describing the accelerator type (e.g., GPU – currently the only supported accelerator) and the number of that type your job requires. Your specified accelerator type must be present on one of the instance types specified in your Compute Environments. For example, if your job needs 2 GPUs, also make sure that you have specified a P instance in your Compute Environment.
+From the API: { ""containerProperties"": { ""vcpus"": 1, ""image"": ""nvidia/cuda:9.0-base"", ""memory"": 2048, ""resourceRequirements"" : [ { ""type"" : ""GPU"", ""value"" : ""1"" } ],
+",Batch,GPU Scheduling
+Can accelerator variables in the job definition be overwritten at job submission?,"
+Similar to vCPU and memory requirements, you can overwrite the number and type of accelerators at job submission.
+",Batch,GPU Scheduling
+Can accelerated instances be used for jobs that don't need the accelerators?,"
+With today's behavior, Batch will avoid scheduling jobs that do not require acceleration on accelerated instances when possible. This is to avoid cases where long-running jobs occupy the accelerated instance without taking advantage of the accelerator, increasing cost. In rare cases with Spot pricing and with accelerated instances as allowed types, it is possible that Batch will determine that an accelerated instance is the least expensive way to run your jobs, regardless of accelerator needs.
+If you submit a job to a CE that only allows Batch to launch accelerated instances, Batch will run the jobs on those instances, regardless of their accelerator needs.
+",Batch,GPU Scheduling
+How does Batch use the ECS GPU-Optimized AMI?,"
+From now on, p-type instances will launch by default with the ECS GPU-optimized AMI. This AMI contains libraries and runtimes needed to run GPU-based applications. You can always point to a custom AMI as needed when creating a CE.
+",Batch,GPU Scheduling
+How do I get started?,"
+Follow the [Getting Started Guide](http://web.archive.org/web/20240727090605/https://docs.aws.amazon.com/batch/latest/userguide/Batch_GetStarted.html) in our documentation to get started.
+",Batch,Getting started
+What do I need to provision to get started?,"
+There is no need to manually launch your own compute resources in order to get started. The AWS Batch web console will guide you through the process of creating your first Compute Environment and Job Queue so that you can submit your first job. Resources within your compute environment will scale up as additional jobs are ready to run and scale down as the number of runnable jobs decreases.
+",Batch,Getting started

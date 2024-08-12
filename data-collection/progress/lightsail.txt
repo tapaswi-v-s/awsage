@@ -1,0 +1,186 @@
+Total FAQs: 148 | Total Categories: 12
+
+===== General =====
+Scraped 1/11 FAQs
+Scraped 2/11 FAQs
+Scraped 3/11 FAQs
+Scraped 4/11 FAQs
+Scraped 5/11 FAQs
+Scraped 6/11 FAQs
+Scraped 7/11 FAQs
+Scraped 8/11 FAQs
+Scraped 9/11 FAQs
+Scraped 10/11 FAQs
+Scraped 11/11 FAQs
+===================
+
+===== Lightsail resources =====
+Scraped 1/24 FAQs
+Scraped 2/24 FAQs
+Scraped 3/24 FAQs
+Scraped 4/24 FAQs
+Scraped 5/24 FAQs
+Scraped 6/24 FAQs
+Scraped 7/24 FAQs
+Scraped 8/24 FAQs
+Scraped 9/24 FAQs
+Scraped 10/24 FAQs
+Scraped 11/24 FAQs
+Scraped 12/24 FAQs
+Scraped 13/24 FAQs
+Scraped 14/24 FAQs
+Scraped 15/24 FAQs
+Scraped 16/24 FAQs
+Scraped 17/24 FAQs
+Scraped 18/24 FAQs
+Scraped 19/24 FAQs
+Scraped 20/24 FAQs
+Scraped 21/24 FAQs
+Scraped 22/24 FAQs
+Scraped 23/24 FAQs
+Scraped 24/24 FAQs
+===============================
+
+===== Billing and account management =====
+Scraped 1/20 FAQs
+Scraped 2/20 FAQs
+Scraped 3/20 FAQs
+Scraped 4/20 FAQs
+Scraped 5/20 FAQs
+Scraped 6/20 FAQs
+Scraped 7/20 FAQs
+Scraped 8/20 FAQs
+Scraped 9/20 FAQs
+Scraped 10/20 FAQs
+Scraped 11/20 FAQs
+Scraped 12/20 FAQs
+Scraped 13/20 FAQs
+Scraped 14/20 FAQs
+Scraped 15/20 FAQs
+Scraped 16/20 FAQs
+Scraped 17/20 FAQs
+Scraped 18/20 FAQs
+Scraped 19/20 FAQs
+Scraped 20/20 FAQs
+==========================================
+
+===== Lightsail for Research =====
+Scraped 1/4 FAQs
+Scraped 2/4 FAQs
+Scraped 3/4 FAQs
+Scraped 4/4 FAQs
+==================================
+
+===== Lightsail block storage =====
+Scraped 1/10 FAQs
+Scraped 2/10 FAQs
+Scraped 3/10 FAQs
+Scraped 4/10 FAQs
+Scraped 5/10 FAQs
+Scraped 6/10 FAQs
+Scraped 7/10 FAQs
+Scraped 8/10 FAQs
+Scraped 9/10 FAQs
+Scraped 10/10 FAQs
+===================================
+
+===== Lightsail load balancer =====
+Scraped 1/10 FAQs
+Scraped 2/10 FAQs
+Scraped 3/10 FAQs
+Scraped 4/10 FAQs
+Scraped 5/10 FAQs
+Scraped 6/10 FAQs
+Scraped 7/10 FAQs
+Scraped 8/10 FAQs
+Scraped 9/10 FAQs
+Scraped 10/10 FAQs
+===================================
+
+===== Certificate management =====
+Scraped 1/8 FAQs
+Scraped 2/8 FAQs
+Scraped 3/8 FAQs
+Scraped 4/8 FAQs
+Scraped 5/8 FAQs
+Scraped 6/8 FAQs
+Scraped 7/8 FAQs
+Scraped 8/8 FAQs
+==================================
+
+===== Upgrade to EC2 =====
+Scraped 1/6 FAQs
+Scraped 2/6 FAQs
+Scraped 3/6 FAQs
+Scraped 4/6 FAQs
+Scraped 5/6 FAQs
+Scraped 6/6 FAQs
+==========================
+
+===== Managed databases =====
+Scraped 1/9 FAQs
+Scraped 2/9 FAQs
+Scraped 3/9 FAQs
+Scraped 4/9 FAQs
+Scraped 5/9 FAQs
+Scraped 6/9 FAQs
+Scraped 7/9 FAQs
+Scraped 8/9 FAQs
+Scraped 9/9 FAQs
+=============================
+
+===== Lightsail CDN distributions =====
+Scraped 1/16 FAQs
+Scraped 2/16 FAQs
+Scraped 3/16 FAQs
+Scraped 4/16 FAQs
+Scraped 5/16 FAQs
+Scraped 6/16 FAQs
+Scraped 7/16 FAQs
+Scraped 8/16 FAQs
+Scraped 9/16 FAQs
+Scraped 10/16 FAQs
+Scraped 11/16 FAQs
+Scraped 12/16 FAQs
+Scraped 13/16 FAQs
+Scraped 14/16 FAQs
+Scraped 15/16 FAQs
+Scraped 16/16 FAQs
+=======================================
+
+===== Containers =====
+Scraped 1/16 FAQs
+Scraped 2/16 FAQs
+Scraped 3/16 FAQs
+Scraped 4/16 FAQs
+Scraped 5/16 FAQs
+Scraped 6/16 FAQs
+Scraped 7/16 FAQs
+Scraped 8/16 FAQs
+Scraped 9/16 FAQs
+Scraped 10/16 FAQs
+Scraped 11/16 FAQs
+Scraped 12/16 FAQs
+Scraped 13/16 FAQs
+Scraped 14/16 FAQs
+Scraped 15/16 FAQs
+Scraped 16/16 FAQs
+======================
+
+===== Object storage =====
+Scraped 1/14 FAQs
+Scraped 2/14 FAQs
+Scraped 3/14 FAQs
+Scraped 4/14 FAQs
+Scraped 5/14 FAQs
+Scraped 6/14 FAQs
+Scraped 7/14 FAQs
+Scraped 8/14 FAQs
+Scraped 9/14 FAQs
+Scraped 10/14 FAQs
+Scraped 11/14 FAQs
+Scraped 12/14 FAQs
+Scraped 13/14 FAQs
+Scraped 14/14 FAQs
+==========================
+

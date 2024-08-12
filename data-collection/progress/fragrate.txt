@@ -1,0 +1,42 @@
+Total FAQs: 25 | Total Categories: 5
+
+===== General =====
+Scraped 1/12 FAQs
+Scraped 2/12 FAQs
+Scraped 3/12 FAQs
+Scraped 4/12 FAQs
+Scraped 5/12 FAQs
+Scraped 6/12 FAQs
+Scraped 7/12 FAQs
+Scraped 8/12 FAQs
+Scraped 9/12 FAQs
+Scraped 10/12 FAQs
+Scraped 11/12 FAQs
+Scraped 12/12 FAQs
+===================
+
+===== Using AWS Fargate =====
+Scraped 1/5 FAQs
+Scraped 2/5 FAQs
+Scraped 3/5 FAQs
+Scraped 4/5 FAQs
+Scraped 5/5 FAQs
+=============================
+
+===== Security and Compliance =====
+Scraped 1/3 FAQs
+Scraped 2/3 FAQs
+Scraped 3/3 FAQs
+===================================
+
+===== Integration =====
+Scraped 1/2 FAQs
+Scraped 2/2 FAQs
+=======================
+
+===== Pricing and Cost Optimization =====
+Scraped 1/3 FAQs
+Scraped 2/3 FAQs
+Scraped 3/3 FAQs
+=========================================
+

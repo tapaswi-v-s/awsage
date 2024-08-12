@@ -1,0 +1,15 @@
+pandas
+beautifulsoup4
+pinecone-client[grpc]
+pinecone
+beautifulsoup4
+langchain-pinecone
+langchain-community
+langchain-openai
+langgraph
+openai
+langchain
+langchain-core
+python-dotenv
+streamlit
+uuid

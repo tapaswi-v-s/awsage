@@ -1,0 +1,49 @@
+Total FAQs: 29 | Total Categories: 6
+
+===== General =====
+Scraped 1/8 FAQs
+Scraped 2/8 FAQs
+Scraped 3/8 FAQs
+Scraped 4/8 FAQs
+Scraped 5/8 FAQs
+Scraped 6/8 FAQs
+Scraped 7/8 FAQs
+Scraped 8/8 FAQs
+===================
+
+===== AWS services =====
+Scraped 1/11 FAQs
+Scraped 2/11 FAQs
+Scraped 3/11 FAQs
+Scraped 4/11 FAQs
+Scraped 5/11 FAQs
+Scraped 6/11 FAQs
+Scraped 7/11 FAQs
+Scraped 8/11 FAQs
+Scraped 9/11 FAQs
+Scraped 10/11 FAQs
+Scraped 11/11 FAQs
+========================
+
+===== Getting started with ordering and installation =====
+Scraped 1/1 FAQs
+==========================================================
+
+===== Billing =====
+Scraped 1/1 FAQs
+===================
+
+===== Security and compliance =====
+Scraped 1/4 FAQs
+Scraped 2/4 FAQs
+Scraped 3/4 FAQs
+Scraped 4/4 FAQs
+===================================
+
+===== Support and maintenance =====
+Scraped 1/4 FAQs
+Scraped 2/4 FAQs
+Scraped 3/4 FAQs
+Scraped 4/4 FAQs
+===================================
+

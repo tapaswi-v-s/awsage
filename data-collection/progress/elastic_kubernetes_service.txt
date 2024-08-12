@@ -1,0 +1,34 @@
+=====  General =====
+Scraped 1/6 FAQs
+Scraped 2/6 FAQs
+Scraped 3/6 FAQs
+Scraped 4/6 FAQs
+Scraped 5/6 FAQs
+Scraped 6/6 FAQs
+====================
+
+=====  Integrations =====
+Scraped 1/4 FAQs
+Scraped 2/4 FAQs
+Scraped 3/4 FAQs
+Scraped 4/4 FAQs
+=========================
+
+=====  Kubernetes versions and updates =====
+Scraped 1/6 FAQs
+Scraped 2/6 FAQs
+Scraped 3/6 FAQs
+Scraped 4/6 FAQs
+Scraped 5/6 FAQs
+Scraped 6/6 FAQs
+============================================
+
+=====  Pricing and availability =====
+Scraped 1/2 FAQs
+Scraped 2/2 FAQs
+=====================================
+
+=====  Service Level Agreement =====
+Scraped 1/1 FAQs
+====================================
+

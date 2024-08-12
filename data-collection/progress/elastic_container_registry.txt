@@ -1,0 +1,37 @@
+=====  General =====
+Scraped 1/7 FAQs
+Scraped 2/7 FAQs
+Scraped 3/7 FAQs
+Scraped 4/7 FAQs
+Scraped 5/7 FAQs
+Scraped 6/7 FAQs
+Scraped 7/7 FAQs
+====================
+
+=====  Using Amazon ECR =====
+Scraped 1/17 FAQs
+Scraped 2/17 FAQs
+Scraped 3/17 FAQs
+Scraped 4/17 FAQs
+Scraped 5/17 FAQs
+Scraped 6/17 FAQs
+Scraped 7/17 FAQs
+Scraped 8/17 FAQs
+Scraped 9/17 FAQs
+Scraped 10/17 FAQs
+Scraped 11/17 FAQs
+Scraped 12/17 FAQs
+Scraped 13/17 FAQs
+Scraped 14/17 FAQs
+Scraped 15/17 FAQs
+Scraped 16/17 FAQs
+Scraped 17/17 FAQs
+=============================
+
+=====  Security =====
+Scraped 1/4 FAQs
+Scraped 2/4 FAQs
+Scraped 3/4 FAQs
+Scraped 4/4 FAQs
+=====================
+
