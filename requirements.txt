@@ -13,3 +13,4 @@ langchain-core
 python-dotenv
 streamlit
 uuid
+numpy

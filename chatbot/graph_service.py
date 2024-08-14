@@ -13,6 +13,7 @@ from typing import Annotated, Sequence, TypedDict
 from langchain_core.messages import BaseMessage
 from langgraph.graph.message import add_messages
 from pinecone.grpc import PineconeGRPC as Pinecone
+from openai import OpenAI
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -27,7 +28,6 @@ class GraphService:
         if os.environ['PINECONE_INDEX'] in indexes:
             return True
         else:
-            print('Index aj nathi')
             return False
 
 
@@ -100,9 +100,13 @@ class GraphService:
                     HumanMessagePromptTemplate(prompt=
                                                      PromptTemplate(input_variables=['context', 'question'], 
                                                                            template=prompt))])
-
-            llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0, streaming=True)
-            
+            if os.environ['USE_FINE_TUNED_MODEL'].lower() == 'true':
+                client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
+                model = list(client.fine_tuning.jobs.list())[0].fine_tuned_model
+                llm = ChatOpenAI(model_name=model, temperature=0, streaming=True)
+            else:        
+                llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0, streaming=True)
+                
             rag_chain = prompt | llm | StrOutputParser()
             response = rag_chain.invoke({"context": docs, "question": question})
             return {"messages": [response]}
