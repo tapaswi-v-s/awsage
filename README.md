@@ -1,4 +1,7 @@
-# AWSage Chatbot
+# AWSage: An Agentic Chatbot
+<a href="https://youtu.be/95gRG43AcXg">
+    <img src="thumbnail.jpg" alt="Alternative Text" width="400" height="200"/>
+</a>
 
 ## Chatbot Overview
 AWSage is an agentic chatbot designed to streamline the handling of AWS Compute queries by leveraging a combination of generative AI, RAG (Retrieval-Augmented Generation), and LangChain technologies. This chatbot transforms traditional FAQ systems into a dynamic, interactive solution, capable of handling complex queries that span multiple AWS topics, providing precise and consolidated responses.
